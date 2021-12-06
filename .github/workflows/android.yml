@@ -25,6 +25,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: commit files
+      run: |
         echo ${{ github.ref }}
         git add .
         git config --local user.email "test@test.com"
